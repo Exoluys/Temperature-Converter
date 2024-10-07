@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 350vh;
+    background-color: transparent;
+    z-index: -2;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px;
+    padding: 15px;
+    height: 100px;
+}
+
+#part1 {
+    height: 100%;
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part2 {
+    height: 100%;
+}
+
+#part3 {
+    height: 100%;
+    margin-bottom: 120px;
+}
+
+#footer {
+    height: 50vh;
+}
+
+#logo {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    position: absolute;
+    top: -80px;
+    left: -50px;
+    width: 190px;
+    height: auto;
+}
+
+#sidePanel {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 22px 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#sidePanel:hover {
+    background-color: rgba(51, 51, 51, 0.3);
+    z-index: 10;
+}
+
+#sidePanel i {
+    color: #fff;
+    font-size: 20px;
+    padding: 25px 10px;
+}
+
+.sidePanel-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 11;
+}
+
+#cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 6px;
+    font-weight: 500;
+    background-color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+#string {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: -5%;
+}
+
+.string-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 15;
+}
+
+#fill {
+    width: 25vw;
+    height: 100%;
+    position: absolute;
+    background-color: #3535352f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    gap: 35px;
+    top: 0;
+    right: -25vw;
+    z-index: 8;
+}
+
+#fill a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#fill h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#fill i {
+    position: absolute;
+    background-color: #ffffffc2;
+    color: #111;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    top: 8%;
+    right: 8%;
+    cursor: pointer;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    padding: 30px 20px;
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#title h1 {
+    font-family: dylan gothic;
+    font-size: 9vw;
+    font-weight: 400;
+}
+
+#title h1 b {
+    font-family: dylan gothic;
+    font-weight: 900;
+    font-size: 10vw;
+    display: block;
+    text-align: center;
+}
+
+#title p {
+    font-size: 1.7vw;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    font-size: 13px;
+}
+
+#footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 500;
+    padding-inline: 30px;
+}
+
+#conpany-logo {
+    display: flex;
+    font-size: 20px;
+    gap: 15px;
+}
+
+#move {
+    position: relative;
+    background-color: #d8ff04;
+    color: #111;
+    padding: 50px 0;
+    font-weight: 600;
+    font-size: 55px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#move-inner {
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
+}
+
+#slider {
+    display: flex;
+    align-items: center;
+    font-family: neue machina;
+    flex-shrink: 0;
+    padding: 0 4px;
+}
+
+#arrow {
+    width: 60px;
+    height: 80px;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#OurDevelopmentJourney {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+    margin-top: 50px;
+}
+
+#OurDevelopmentJourney .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 30px;
+    height: 30%;
+}
+
+#contents {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contents ul {
+    width: 80vh;
+    min-width: 20vh;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+#contents ul .lists {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7vh;
+}
+
+#contents ul .lists i {
+    font-size: 30px;
+    padding: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.dotted-line {
+    position: absolute;
+    top: 5.3rem;
+    left: 2.4rem;
+    width: 1px;
+    height: 86%;
+    border-left: 4px dotted rgba(255, 255, 255, 0.6);
+}
+
+#precisionAndInnovation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+#precisionAndInnovation .title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+#precisionAndInnovation .title h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#precisionAndInnovation .divison2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#precisionAndInnovation .divison2 #info {
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#precisionAndInnovation .divison2 #info i {
+    font-size: 3vh;
+}

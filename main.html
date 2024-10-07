@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3MP CONV</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="cursor"></div>
+
+    <section id="page1">
+        <nav>
+            <div id="logo">
+                <img src="images/Logo-removebg-preview.png" alt="Company Logo">
+            </div>
+
+            <div id="sidePanel">
+                <i class="ri-menu-3-fill"></i>
+                <div class="sidePanel-container"></div>
+            </div>
+        </nav>
+
+        <div id="fill">
+            <a href="main.html">
+                <h2>Home</h2>
+            </a>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+            <a href="contactus.html">
+                <h2>Contact</h2>
+            </a>
+
+            <i class="ri-close-fill"></i>
+        </div>
+
+        <div id="container">
+            <div class="part1">
+                <h1>Welcome to <b>T3MP CONV</b></h1>
+                <p>Discover the coolest temperature conversion tools. Dive into our sleek portfolio and transform how
+                    you understand temperature.</p>
+                <a href="#page4" target="_parent"><button>Get Converting <i class="ri-arrow-down-line"></i></button></a>
+            </div>
+            <div class="part2">
+                <div id="image-container">
+                    <div class="c">
+                        <h1>&#67;</h1>
+                    </div>
+                    <div class="f">
+                        <h1>&#70;</h1>
+                    </div>
+                    <div class="k">
+                        <h1>&#75;</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page2">
+        <div id="content">
+            <div id="line1">
+                <div id="info">
+                    <i class="ri-temp-hot-fill"></i>
+                    <h1>Accuracy</h1>
+                    <p>Experience precise temperature conversions every time.</p>
+                </div>
+                <div id="info">
+                    <i class="ri-flashlight-fill"></i>
+                    <h1>Speed</h1>
+                    <p>Get instant results with our fast conversion tools.</p>
+                </div>
+                <div id="info">
+                    <i class="ri-user-settings-fill"></i>
+                    <h1>User-Friendly</h1>
+                    <p>Simple and intuitive tools for everyone.</p>
+                </div>
+            </div>
+            <div id="line2">
+                <div id="info2">
+                    <i class="ri-line-chart-line"></i>
+                    <h1>Reliability</h1>
+                    <p>Dependable tools you can always trust.</p>
+                </div>
+                <div id="info2">
+                    <i class="ri-smartphone-fill"></i>
+                    <h1>Reponsive</h1>
+                    <p>Optimized for all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page3">
+        <div id="string">
+            <svg width="1900px" height="200px">
+                <path d="M 20 100 Q 950 100 1885 100" stroke="#fff" fill="transparent"></path>
+            </svg>
+            <div class="string-container"></div>
+        </div>
+
+        <div id="howItWorks">
+            <div id="title">
+                <h1>How It Works</h1>
+                <p>Follow these simple steps to convert temperatures effortlessly.</p>
+            </div>
+            <div id="contents">
+                <div id="conts">
+                    <div class="content">
+                        <div id="content-icon">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        <div id="content-para">
+                            <p>Select Conversion Type</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div id="content-icon">
+                            <i class="ri-keyboard-line"></i>
+                        </div>
+                        <div id="content-para">
+                            <p>Enter Your Value</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div id="content-icon">
+                            <i class="ri-calculator-line"></i>
+                        </div>
+                        <div id="content-para">
+                            <p>Get Instant Results</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page4">
+        <div class="converter-overlay"></div>
+        <div class="converter-container">
+            <div class="main-area">
+                <div class="main-header">
+                    <p>Converter</p>
+                </div>
+
+                <form id="converterForm">
+                    <div class="input-group">
+                        <label for="temperature">Enter Temperature:</label>
+                        <input type="number" id="temperature" placeholder="Temperature" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="convertFrom">From:</label>
+                        <select id="convertFrom">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="convertTo">To:</label>
+                        <select id="convertTo">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+
+                    <div class="submit-button">
+                        <button type="submit" class="submit-button-inner">
+                            <span>Convert</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 74 74"
+                                    height="34"
+                                    width="34"
+                                >
+                                    <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                                    <path
+                                    fill="black"
+                                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                                    ></path>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="result">
+                        <h2 id="resultText"></h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="page5">
+        <footer>
+            <div id="move">
+                <div id="move-inner">
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+
+                    <div id="slider">
+                        Experience the new era of conversion
+                        <div id="arrow">
+                            <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-text">
+                <div id="conpany-logo">
+                    <a href="https://x.com/jairevankar" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100071143621082" target="_blank"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/_jaii_02/" target="_blank"><i class="ri-instagram-line"></i></a>
+                    <a href="https://github.com/Exoluys" target="_blank"><i class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/in/jai-revankar-002bb0215/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+
+                <div id="footer-text">
+                    <p>© T3MP CONV 2023, All Rights Reserved. Dive into the world of temperature conversion with us.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

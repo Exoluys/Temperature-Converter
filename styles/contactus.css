@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: -2;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px;
+    padding: 15px;
+    height: 100px;
+}
+
+#part1 {
+    height: 100%;
+    background-image: url(../images/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    position: absolute;
+    top: -80px;
+    left: -50px;
+    width: 190px;
+    height: auto;
+}
+
+#sidePanel {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 22px 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#sidePanel:hover {
+    background-color: rgba(51, 51, 51, 0.3);
+    z-index: 10;
+}
+
+#sidePanel i {
+    color: #fff;
+    font-size: 20px;
+    padding: 25px 10px;
+}
+
+.sidePanel-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 6px;
+    font-weight: 500;
+    background-color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#fill {
+    width: 25vw;
+    height: 100%;
+    position: absolute;
+    background-color: #3535352f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    gap: 35px;
+    top: 0;
+    right: -25vw;
+    z-index: 8;
+}
+
+#fill a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#fill h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#fill i {
+    position: absolute;
+    background-color: #ffffffc2;
+    color: #111;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    top: 8%;
+    right: 8%;
+    cursor: pointer;
+}
+
+#title,
+#info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#title h1 {
+    font-family: dylan gothic;
+    font-size: 9vw;
+    font-weight: 400;
+}
+
+#title p {
+    font-size: 1.7vw;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+#title p span {
+    display: block;
+    font-weight: 900;
+}
+
+#info p {
+    font-size: 1.5vw;
+    margin-top: 30px;
+}
